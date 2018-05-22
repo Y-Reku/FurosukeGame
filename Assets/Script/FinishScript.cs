@@ -10,6 +10,7 @@ public class FinishScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//escボタンで終了させる
 		if (Input.GetKey(KeyCode.Escape)) {
 			Application.Quit();
 		}

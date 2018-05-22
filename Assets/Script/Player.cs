@@ -38,11 +38,11 @@ public class Player : MonoBehaviour {
 			anim.SetBool ("Wait", true);
 		}
 
-		//画面中央から左に4移動した位置をユニティちゃんが超えたら
+		//画面中央から左に4移動した位置をキャラクターが超えたら
 		if (transform.position.x > mainCamera.transform.position.x - 7) {
 			//カメラの位置を取得
 			Vector3 cameraPos = mainCamera.transform.position;
-			//ユニティちゃんの位置から右に4移動した位置を画面中央にする
+			//キャラクターの位置から右に4移動した位置を画面中央にする
 			cameraPos.x = transform.position.x + 7;
 			mainCamera.transform.position = cameraPos;
 		}

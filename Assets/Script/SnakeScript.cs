@@ -17,6 +17,7 @@ public class SnakeScript : MonoBehaviour {
 	void Update () {
 
 		//rigidbody.constraints = RigidbodyConstraints.FreezePositionX;
+		//指定したポジションを往復する
 		transform.position = new Vector3(start_Pos.x + Mathf.PingPong(Time.time * 0.5f, 1.5f), start_Pos.y, z_Pos);
 
 		transform.rotation = Quaternion.Euler(0, 180, 0);
